@@ -1,0 +1,23 @@
+{
+    "name": "shotbyj.av - Street Landscape Photography",
+    "short_name": "shotbyj.av",
+    "description": "Street landscape photographer capturing moments that often go unnoticed. Every corner holds a story, and every horizon whispers of distant lands waiting to be explored.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "any",
+            "type": "image/x-icon"
+        }
+    ],
+    "categories": [
+        "photography",
+        "art",
+        "lifestyle"
+    ],
+    "lang": "en",
+    "dir": "ltr"
+}

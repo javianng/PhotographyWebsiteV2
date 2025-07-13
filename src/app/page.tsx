@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Button } from "~/components/ui/button";
 import { Skeleton } from "~/components/ui/skeleton";
+import { generateStructuredData } from "~/lib/constants";
 
 interface Photoset {
   id: string;
@@ -26,7 +27,7 @@ interface Photo {
 
 export default function Home() {
   const [photosets, setPhotosets] = useState<Photoset[]>([]);
-  const [carouselPhotos, setCarouselPhotos] = useState<Photo[]>([]);
+  const [, setCarouselPhotos] = useState<Photo[]>([]);
   const [loading, setLoading] = useState(true);
   const router = useRouter();
 
@@ -61,22 +62,30 @@ export default function Home() {
     void fetchPhotosets();
   }, []);
 
+  // Add structured data for SEO
+  const structuredData = generateStructuredData("photography");
+
   return (
-    <main className="container flex flex-col items-center py-10">
-      <section className="flex w-2/3 flex-col items-center gap-3 py-6">
-        <h1 className="text-xl">Street Landscape Photographer</h1>
-        <p className="text-justify text-sm font-thin">
-          Wandering through the streets and capturing moments that often go
-          unnoticed. Every corner holds a story, and every horizon whispers of
-          distant lands waiting to be explored.
-        </p>
-      </section>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <main className="container flex flex-col items-center py-10">
+        <section className="flex w-2/3 flex-col items-center gap-3 py-6">
+          <h1 className="text-xl">Street Landscape Photographer</h1>
+          <p className="text-justify text-sm font-thin">
+            Wandering through the streets and capturing moments that often go
+            unnoticed. Every corner holds a story, and every horizon whispers of
+            distant lands waiting to be explored.
+          </p>
+        </section>
 
-      <hr className="mb-10 h-[1px] w-full bg-neutral-200" />
+        <hr className="mb-10 h-[1px] w-full bg-neutral-200" />
 
-      <section className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
-        {loading
-          ? Array.from({ length: 6 }).map((_, index) => (
+        <section className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
+          {loading
+            ? Array.from({ length: 6 }).map((_, index) => (
               <div
                 key={index}
                 className="aspect-square animate-pulse space-y-2"
@@ -86,7 +95,7 @@ export default function Home() {
                 <Skeleton className="h-4 w-2/3 bg-gray-300" />
               </div>
             ))
-          : photosets.map((set) => (
+            : photosets.map((set) => (
               <Button
                 key={set.id}
                 variant="none"
@@ -97,7 +106,7 @@ export default function Home() {
                 <div className="relative">
                   <Image
                     src={`https://live.staticflickr.com/${set.server}/${set.primary}_${set.secret}_c.jpg`}
-                    alt={set.title._content}
+                    alt={`${set.title._content} - Photography collection by Javian Ng`}
                     width={500}
                     height={500}
                     className="aspect-square object-cover object-center"
@@ -111,7 +120,8 @@ export default function Home() {
                 </div>
               </Button>
             ))}
-      </section>
-    </main>
+        </section>
+      </main>
+    </>
   );
 }
