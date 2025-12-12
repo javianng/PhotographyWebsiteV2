@@ -1,100 +1,29 @@
-<a name="readme-top"></a>
+# Create T3 App
 
-<!-- PROJECT SHIELDS -->
+This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
 
-[![LinkedIn][linkedin-shield]][linkedin-url]
+## What's next? How do I make an app with this?
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
+We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
 
-<Image src="public/favicon.ico"/>
+If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
 
-  <h3 align="center">Photography Website V2</h3>
+- [Next.js](https://nextjs.org)
+- [NextAuth.js](https://next-auth.js.org)
+- [Prisma](https://prisma.io)
+- [Drizzle](https://orm.drizzle.team)
+- [Tailwind CSS](https://tailwindcss.com)
+- [tRPC](https://trpc.io)
 
-  <p align="center">
-    This is a website to showcase my photography works.
-    <br />
-    <a href="https://photography-website-v2.vercel.app/"><strong>Visit the page »</strong></a>
-  </p>
-</div>
+## Learn More
 
-<!-- TABLE OF CONTENTS -->
+To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
 
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ol>
-</details>
+- [Documentation](https://create.t3.gg/)
+- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
 
-</br>
+You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
 
-<!-- ABOUT THE PROJECT -->
+## How do I deploy this?
 
-## About The Project
-
-Welcome to my personal photography portfolio website repository! This project serves as a showcase of my passion for photography, providing a platform for me to exhibit my work, share my experiences, and connect with fellow photography enthusiasts. Whether you're an avid photographer, a potential client, or simply someone interested in visual storytelling, this website offers a glimpse into my creative journey through the lens.
-
-### Key Features
-
-- Portfolio Showcase: Explore a curated collection of my best photographs, categorized by themes, styles, and locations. Each image tells a unique story, capturing moments in time, landscapes, and emotions.
-
-- Contact & Collaboration: Interested in collaborating on a project or just saying hello? Use the social media links to get in touch with me directly.
-
-- Responsive Design: The website is designed to be accessible across all devices, ensuring a seamless and visually appealing experience whether you're browsing on a desktop, tablet, or smartphone.
-
-- Performance Optimization: I've taken care to optimize the website's performance, ensuring fast loading times so you can enjoy the visuals without delay.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-### Built With
-
-This section list the major frameworks/libraries used to bootstrap this project.
-
-- [![Next][Next.js]][Next-url]
-- [![React][React.js]][React-url]
-- [![TailwindCSS][TailwindCSS]][TailwindCSS-url]
-- [![TypeScript][TypeScript]][TypeScript-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ROADMAP -->
-
-## Roadmap
-
-- [x] Add README.md
-- [x] Implement Dark Mode
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTACT -->
-
-## Contact
-
-Javian Ng - [@j_avianzz](https://twitter.com/j_avianzz)
-
-Project Link: [https://github.com/javianng/photography-website-v2](https://github.com/javianng/photography-website-v2)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/javianngzh/
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[TailwindCSS]: https://img.shields.io/static/v1?style=for-the-badge&message=Tailwind+CSS&color=222222&logo=Tailwind+CSS&logoColor=06B6D4&label=
-[TailwindCSS-url]: https://tailwindcss.com/
-[TypeScript]: https://img.shields.io/static/v1?style=for-the-badge&message=TypeScript&color=3178C6&logo=TypeScript&logoColor=FFFFFF&label=
-[TypeScript-url]: https://www.typescriptlang.org/
+Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.

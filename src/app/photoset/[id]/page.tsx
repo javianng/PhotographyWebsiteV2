@@ -21,7 +21,9 @@ interface PhotosetPageProps {
 }
 
 // Generate metadata for the photoset page
-export async function generateMetadata({ params }: PhotosetPageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PhotosetPageProps): Promise<Metadata> {
   try {
     const responseInfo = await axios.get<{
       photoset: PhotosetInfo;
@@ -43,7 +45,8 @@ export async function generateMetadata({ params }: PhotosetPageProps): Promise<M
     console.error("Error generating metadata:", error);
     return {
       title: "Photography Collection",
-      description: "Explore stunning street and landscape photography by Javian Ng.",
+      description:
+        "Explore stunning street and landscape photography by Javian Ng.",
     };
   }
 }
