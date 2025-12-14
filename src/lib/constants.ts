@@ -2,14 +2,21 @@ import { type Metadata } from "next";
 
 export const SITE_CONFIG = {
   name: "shotbyj.av",
-  description: "Street landscape photographer capturing moments that often go unnoticed. Every corner holds a story, and every horizon whispers of distant lands waiting to be explored.",
+  description:
+    "Street landscape photographer capturing moments that often go unnoticed. Every corner holds a story, and every horizon whispers of distant lands waiting to be explored.",
   author: "Javian Ng",
-  url: "https://shotbyj.av", // Update this with your actual domain
+  url: "https://shotbyj.av",
   navLinks: [
     { href: "/", label: "work" },
     { href: "/about-me", label: "about me" },
   ],
-  keywords: ["street photography", "landscape photography", "photography", "Javian Ng", "shotbyj.av"] as string[],
+  keywords: [
+    "street photography",
+    "landscape photography",
+    "photography",
+    "Javian Ng",
+    "shotbyj.av",
+  ] as string[],
   social: {
     twitter: "@javianng",
     instagram: "@shotbyj.av",
@@ -67,7 +74,10 @@ export const METADATA: Metadata = {
   },
 };
 
-export const generatePhotosetMetadata = (title: string, photoCount: number): Metadata => ({
+export const generatePhotosetMetadata = (
+  title: string,
+  photoCount: number,
+): Metadata => ({
   title: title,
   description: `Explore ${photoCount} stunning photographs in "${title}" - A collection of street and landscape photography by Javian Ng.`,
   openGraph: {
@@ -89,16 +99,23 @@ export const generatePhotosetMetadata = (title: string, photoCount: number): Met
   },
 });
 
-export const generateStructuredData = (type: "website" | "person" | "photography") => {
+export const generateStructuredData = (
+  type: "website" | "person" | "photography",
+) => {
   const baseData = {
     "@context": "https://schema.org",
-    "@type": type === "person" ? "Person" : type === "photography" ? "CreativeWork" : "WebSite",
-    "name": SITE_CONFIG.name,
-    "description": SITE_CONFIG.description,
-    "url": SITE_CONFIG.url,
-    "author": {
+    "@type":
+      type === "person"
+        ? "Person"
+        : type === "photography"
+          ? "CreativeWork"
+          : "WebSite",
+    name: SITE_CONFIG.name,
+    description: SITE_CONFIG.description,
+    url: SITE_CONFIG.url,
+    author: {
       "@type": "Person",
-      "name": SITE_CONFIG.author,
+      name: SITE_CONFIG.author,
     },
   };
 
@@ -106,10 +123,14 @@ export const generateStructuredData = (type: "website" | "person" | "photography
     return {
       ...baseData,
       "@type": "Person",
-      "name": SITE_CONFIG.author,
-      "jobTitle": "Street Landscape Photographer",
-      "knowsAbout": ["Street Photography", "Landscape Photography", "Photography"],
-      "sameAs": [
+      name: SITE_CONFIG.author,
+      jobTitle: "Street Landscape Photographer",
+      knowsAbout: [
+        "Street Photography",
+        "Landscape Photography",
+        "Photography",
+      ],
+      sameAs: [
         `https://twitter.com/${SITE_CONFIG.social.twitter.replace("@", "")}`,
         `https://instagram.com/${SITE_CONFIG.social.instagram.replace("@", "")}`,
         "https://www.javianng.com",
@@ -121,10 +142,10 @@ export const generateStructuredData = (type: "website" | "person" | "photography
     return {
       ...baseData,
       "@type": "CreativeWork",
-      "genre": "Photography",
-      "creator": {
+      genre: "Photography",
+      creator: {
         "@type": "Person",
-        "name": SITE_CONFIG.author,
+        name: SITE_CONFIG.author,
       },
     };
   }
