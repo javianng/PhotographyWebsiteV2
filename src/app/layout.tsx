@@ -4,40 +4,53 @@ import { Navbar } from "~/components/layout/navbar";
 import { ThemeProvider } from "~/components/theme-provider";
 import { METADATA } from "~/lib/constants";
 import "~/styles/globals.css";
-import { Geist } from "next/font/google";
+import { Quattrocento_Sans } from "next/font/google";
+import { Mulish } from "next/font/google";
 
 export const metadata: Metadata = METADATA;
 
-const geist = Geist({
+const quattrocentoSans = Quattrocento_Sans({
   subsets: ["latin"],
-  variable: "--font-geist-sans",
+  variable: "--font-quattrocento-sans",
+  weight: "400",
+});
+
+const mulish = Mulish({
+  subsets: ["latin"],
+  variable: "--font-mulish",
 });
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={` ${quattrocentoSans.variable} ${mulish.variable} `}
+    >
       <head>
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#000000" />
+        <meta name="theme-col or" content="#000000" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="shotbyj.av" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
       </head>
-      <body className="flex min-h-screen w-full max-w-7xl flex-col items-center justify-center px-2 sm:px-10">
+      <body>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
-          <main className="flex w-full flex-grow items-center justify-center">
-            {children}
-          </main>
-          <Footer />
+          <div className="flex justify-center">
+            <div className="max-w-7xl flex-col px-2 sm:px-10">
+              <Navbar />
+              <main>{children}</main>
+              <Footer />
+            </div>
+          </div>
         </ThemeProvider>
       </body>
     </html>

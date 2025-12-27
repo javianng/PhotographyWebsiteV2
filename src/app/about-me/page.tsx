@@ -33,7 +33,7 @@ export default function Page() {
           </div>
         </section>
 
-        <hr className="my-10 h-[1px] w-full bg-neutral-200" />
+        <hr className="my-10 h-px w-full bg-neutral-200" />
 
         <section className="space-y-6 text-center md:text-left">
           <div className="flex flex-col items-center space-y-2 md:flex-row md:space-x-4">

@@ -69,9 +69,6 @@ export const METADATA: Metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    google: "your-google-verification-code", // Add your Google Search Console verification code
-  },
 };
 
 export const generatePhotosetMetadata = (

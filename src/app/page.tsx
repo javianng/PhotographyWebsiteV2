@@ -45,7 +45,7 @@ export default async function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <main className="container flex flex-col items-center py-10">
+      <main className="just container flex flex-col items-center py-10">
         <section className="flex w-2/3 flex-col items-center gap-3 py-6">
           <h1 className="text-xl">Street Landscape Photographer</h1>
           <p className="text-justify text-sm font-thin">
@@ -55,7 +55,7 @@ export default async function Home() {
           </p>
         </section>
 
-        <hr className="mb-10 h-[1px] w-full bg-neutral-200" />
+        <hr className="mb-10 h-px w-full bg-neutral-200" />
 
         <section className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
           {photosets.map((set) => (
