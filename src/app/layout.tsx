@@ -1,11 +1,10 @@
 import { type Metadata } from "next";
+import { Mulish, Quattrocento_Sans } from "next/font/google";
 import { Footer } from "~/components/layout/footer";
 import { Navbar } from "~/components/layout/navbar";
 import { ThemeProvider } from "~/components/theme-provider";
 import { METADATA } from "~/lib/constants";
 import "~/styles/globals.css";
-import { Quattrocento_Sans } from "next/font/google";
-import { Mulish } from "next/font/google";
 
 export const metadata: Metadata = METADATA;
 
