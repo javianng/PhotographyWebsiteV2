@@ -18,7 +18,8 @@ export function PhotoGallery({ photos }: PhotoGalleryProps) {
     const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
     const filteredPhotos = useMemo(
-        () => (activeTag === null ? photos : photos.filter((photo) => photo.tags.includes(activeTag))),
+        () =>
+            activeTag === null ? photos : photos.filter((photo) => photo.tags.includes(activeTag)),
         [photos, activeTag],
     );
 

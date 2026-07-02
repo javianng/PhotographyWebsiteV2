@@ -9,7 +9,11 @@ type FilterBarProps = {
 export function FilterBar({ tags, activeTag, onTagChange }: FilterBarProps) {
     return (
         <div className="mb-6 flex flex-wrap gap-2">
-            <Button size="sm" variant={activeTag === null ? "default" : "outline"} onClick={() => onTagChange(null)}>
+            <Button
+                size="sm"
+                variant={activeTag === null ? "default" : "outline"}
+                onClick={() => onTagChange(null)}
+            >
                 all
             </Button>
             {tags.map((tag) => (
