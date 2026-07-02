@@ -6,7 +6,8 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "eslint"
+        "lint": "eslint",
+        "sync-photos": "node scripts/sync-photos.mjs"
     },
     "dependencies": {
         "@emailjs/browser": "^4.4.1",
@@ -28,6 +29,8 @@
         "@types/node": "^20",
         "@types/react": "^19",
         "@types/react-dom": "^19",
+        "cloudinary": "^2.10.0",
+        "dotenv": "^17.4.2",
         "eslint": "^9",
         "eslint-config-next": "16.2.9",
         "tailwindcss": "^4",
