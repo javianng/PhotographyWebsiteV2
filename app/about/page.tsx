@@ -1,8 +1,13 @@
+import { pageMetadata } from "@/lib/site";
+import type { Metadata } from "next";
 import Image from "next/image";
 
-export const metadata = {
+export const metadata: Metadata = pageMetadata({
     title: "About",
-};
+    description:
+        "Learn more about Javian Ng, a photographer capturing real, unposed moments in landscape, people, and automotive photography.",
+    path: "/about",
+});
 
 export default function AboutPage() {
     return (

@@ -1,9 +1,14 @@
 import { ConnectForm } from "@/components/connect-form";
+import { pageMetadata } from "@/lib/site";
+import type { Metadata } from "next";
 import Image from "next/image";
 
-export const metadata = {
+export const metadata: Metadata = pageMetadata({
     title: "Contact",
-};
+    description:
+        "Get in touch with Javian Ng for photography collaborations, bookings, and inquiries.",
+    path: "/connect",
+});
 
 export default function ContactPage() {
     return (

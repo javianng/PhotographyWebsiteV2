@@ -39,6 +39,7 @@ export function LightboxWrapper({
         src: cloudinaryUrl(photo.publicId, 2400),
         width: photo.width,
         height: photo.height,
+        alt: photo.alt,
     }));
 
     return (
