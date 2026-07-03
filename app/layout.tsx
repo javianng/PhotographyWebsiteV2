@@ -3,6 +3,7 @@ import { Navbar } from "@/components/navbar";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Suspense } from "react";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
@@ -48,10 +49,10 @@ export default function RootLayout({
             )}
         >
             <body className="min-h-full flex flex-col bg-background text-foreground">
-                <Navbar />
-                <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-8 sm:px-6">
-                    {children}
-                </main>
+                <Suspense fallback={null}>
+                    <Navbar />
+                </Suspense>
+                <main className="p-2">{children}</main>
                 <Footer />
             </body>
         </html>

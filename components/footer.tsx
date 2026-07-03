@@ -1,5 +1,3 @@
-import { Mail } from "lucide-react";
-
 function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
     return (
         <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
@@ -20,13 +18,6 @@ export function Footer() {
                     className="transition-colors hover:text-foreground"
                 >
                     <InstagramIcon className="size-4" />
-                </a>
-                <a
-                    href="mailto:javian.ng.z.h@gmail.com"
-                    aria-label="Email"
-                    className="transition-colors hover:text-foreground"
-                >
-                    <Mail className="size-4" />
                 </a>
                 <span>&copy; {new Date().getFullYear()} Javian Ng</span>
             </div>

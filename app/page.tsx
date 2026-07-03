@@ -1,10 +1,11 @@
 import { PhotoGallery } from "@/components/photo-gallery";
 import { photos } from "@/lib/photos";
+import { Suspense } from "react";
 
 export default function HomePage() {
     return (
-        <section>
+        <Suspense>
             <PhotoGallery photos={photos} />
-        </section>
+        </Suspense>
     );
 }

@@ -1,9 +1,9 @@
 "use client";
 
-import { FilterBar } from "@/components/filter-bar";
 import { LightboxWrapper } from "@/components/lightbox-wrapper";
 import { PhotoCard } from "@/components/photo-card";
-import { ALL_TAGS, type Photo } from "@/lib/photos";
+import { type Photo } from "@/lib/photos";
+import { useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
 import Masonry from "react-masonry-css";
 
@@ -14,7 +14,7 @@ type PhotoGalleryProps = {
 const breakpointCols = { default: 4, 1024: 3, 768: 2, 640: 1 };
 
 export function PhotoGallery({ photos }: PhotoGalleryProps) {
-    const [activeTag, setActiveTag] = useState<string | null>(null);
+    const activeTag = useSearchParams().get("tag");
     const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
     const filteredPhotos = useMemo(
@@ -24,15 +24,14 @@ export function PhotoGallery({ photos }: PhotoGalleryProps) {
     );
 
     return (
-        <div>
-            <FilterBar tags={ALL_TAGS} activeTag={activeTag} onTagChange={setActiveTag} />
+        <>
             <Masonry
                 breakpointCols={breakpointCols}
-                className="flex w-auto -ml-1 gap-1"
+                className="flex w-auto -ml-1 gap-1 -mb-2"
                 columnClassName="pl-1 bg-clip-padding"
             >
                 {filteredPhotos.map((photo, index) => (
-                    <div key={photo.id} className="mb-1">
+                    <div key={photo.id} className="mb-2">
                         <PhotoCard photo={photo} onClick={() => setLightboxIndex(index)} />
                     </div>
                 ))}
@@ -42,6 +41,6 @@ export function PhotoGallery({ photos }: PhotoGalleryProps) {
                 index={lightboxIndex}
                 onClose={() => setLightboxIndex(null)}
             />
-        </div>
+        </>
     );
 }

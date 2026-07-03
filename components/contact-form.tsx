@@ -1,29 +1,48 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+import { Field, FieldError, FieldGroup, FieldLabel } from "@/components/ui/field";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import emailjs from "@emailjs/browser";
-import { useRef, useState } from "react";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useState } from "react";
+import { Controller, useForm } from "react-hook-form";
+import { z } from "zod";
+
+const formSchema = z.object({
+    from_name: z.string().min(1, "Name is required"),
+    from_email: z.email("Enter a valid email"),
+    message: z.string().min(1, "Message is required"),
+});
+
+type FormValues = z.infer<typeof formSchema>;
 
 type FormStatus = "idle" | "submitting" | "success" | "error";
 
 export function ContactForm() {
-    const formRef = useRef<HTMLFormElement>(null);
     const [status, setStatus] = useState<FormStatus>("idle");
+    const form = useForm<FormValues>({
+        resolver: zodResolver(formSchema),
+        defaultValues: { from_name: "", from_email: "", message: "" },
+    });
 
-    async function handleSubmit(e: React.FormEvent) {
-        e.preventDefault();
+    async function onSubmit(data: FormValues) {
         setStatus("submitting");
 
         try {
-            await emailjs.sendForm(
+            await emailjs.send(
                 process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
                 process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-                formRef.current!,
+                {
+                    from_name: data.from_name,
+                    from_email: data.from_email,
+                    message: data.message,
+                },
                 { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY! },
             );
             setStatus("success");
-            formRef.current?.reset();
+            form.reset();
         } catch (error) {
             console.error(error);
             setStatus("error");
@@ -38,51 +57,61 @@ export function ContactForm() {
         );
     }
 
-    const inputClasses = cn(
-        "w-full border border-input bg-input/30 px-3 py-2 text-sm text-foreground",
-        "outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50",
-    );
-
     return (
-        <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-4">
-            <div className="flex flex-col gap-1.5">
-                <label htmlFor="from_name" className="text-sm text-muted-foreground">
-                    Name
-                </label>
-                <input
-                    id="from_name"
+        <form onSubmit={form.handleSubmit(onSubmit)}>
+            <FieldGroup>
+                <Controller
+                    control={form.control}
                     name="from_name"
-                    type="text"
-                    required
-                    className={inputClasses}
+                    render={({ field, fieldState }) => (
+                        <Field data-invalid={fieldState.invalid}>
+                            <FieldLabel htmlFor={field.name}>Name</FieldLabel>
+                            <Input {...field} id={field.name} aria-invalid={fieldState.invalid} />
+                            {fieldState.invalid && <FieldError errors={[fieldState.error]} />}
+                        </Field>
+                    )}
                 />
-            </div>
-            <div className="flex flex-col gap-1.5">
-                <label htmlFor="from_email" className="text-sm text-muted-foreground">
-                    Email
-                </label>
-                <input
-                    id="from_email"
+                <Controller
+                    control={form.control}
                     name="from_email"
-                    type="email"
-                    required
-                    className={inputClasses}
+                    render={({ field, fieldState }) => (
+                        <Field data-invalid={fieldState.invalid}>
+                            <FieldLabel htmlFor={field.name}>Email</FieldLabel>
+                            <Input
+                                {...field}
+                                id={field.name}
+                                type="email"
+                                aria-invalid={fieldState.invalid}
+                            />
+                            {fieldState.invalid && <FieldError errors={[fieldState.error]} />}
+                        </Field>
+                    )}
                 />
-            </div>
-            <div className="flex flex-col gap-1.5">
-                <label htmlFor="message" className="text-sm text-muted-foreground">
-                    Message
-                </label>
-                <textarea id="message" name="message" rows={5} required className={inputClasses} />
-            </div>
-            {status === "error" ? (
-                <p className="text-sm text-destructive">
-                    Something went wrong sending your message. Please try again.
-                </p>
-            ) : null}
-            <Button type="submit" disabled={status === "submitting"} className="self-start">
-                {status === "submitting" ? "Sending…" : "Send"}
-            </Button>
+                <Controller
+                    control={form.control}
+                    name="message"
+                    render={({ field, fieldState }) => (
+                        <Field data-invalid={fieldState.invalid}>
+                            <FieldLabel htmlFor={field.name}>Message</FieldLabel>
+                            <Textarea
+                                {...field}
+                                id={field.name}
+                                rows={5}
+                                aria-invalid={fieldState.invalid}
+                            />
+                            {fieldState.invalid && <FieldError errors={[fieldState.error]} />}
+                        </Field>
+                    )}
+                />
+                {status === "error" ? (
+                    <p className="text-sm text-destructive">
+                        Something went wrong sending your message. Please try again.
+                    </p>
+                ) : null}
+                <Button type="submit" disabled={status === "submitting"} className="self-start">
+                    {status === "submitting" ? "Sending…" : "Send"}
+                </Button>
+            </FieldGroup>
         </form>
     );
 }
