@@ -20,14 +20,13 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
     title: {
-        default: "Javian Ng — Photography",
-        template: "%s — Javian Ng",
+        default: "Javian Ng | javian.captures",
+        template: "%s | Javian Ng | javian.captures",
     },
     description: "Photography portfolio by Javian Ng.",
     openGraph: {
-        title: "Javian Ng — Photography",
+        title: "Javian Ng | javian.captures",
         description: "Photography portfolio by Javian Ng.",
-        // TODO: add a real openGraph image once you have your own Cloudinary assets.
     },
 };
 
@@ -48,11 +47,11 @@ export default function RootLayout({
                 inter.variable,
             )}
         >
-            <body className="min-h-full flex flex-col bg-background text-foreground">
+            <body className="bg-background text-foreground flex min-h-full flex-col px-2">
                 <Suspense fallback={null}>
                     <Navbar />
                 </Suspense>
-                <main className="p-2">{children}</main>
+                <main>{children}</main>
                 <Footer />
             </body>
         </html>

@@ -19,7 +19,9 @@ export function PhotoGallery({ photos }: PhotoGalleryProps) {
 
     const filteredPhotos = useMemo(
         () =>
-            activeTag === null ? photos : photos.filter((photo) => photo.tags.includes(activeTag)),
+            activeTag === null
+                ? photos
+                : photos.filter((photo) => photo.tags.includes(activeTag)),
         [photos, activeTag],
     );
 
@@ -27,12 +29,15 @@ export function PhotoGallery({ photos }: PhotoGalleryProps) {
         <>
             <Masonry
                 breakpointCols={breakpointCols}
-                className="flex w-auto -ml-1 gap-1 -mb-2"
+                className="-mb-2 -ml-1 flex w-auto gap-1"
                 columnClassName="pl-1 bg-clip-padding"
             >
                 {filteredPhotos.map((photo, index) => (
                     <div key={photo.id} className="mb-2">
-                        <PhotoCard photo={photo} onClick={() => setLightboxIndex(index)} />
+                        <PhotoCard
+                            photo={photo}
+                            onClick={() => setLightboxIndex(index)}
+                        />
                     </div>
                 ))}
             </Masonry>

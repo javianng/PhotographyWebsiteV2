@@ -7,7 +7,8 @@
         "build": "next build",
         "start": "next start",
         "lint": "eslint",
-        "sync-photos": "node scripts/sync-photos.mjs"
+        "sync-photos": "node scripts/sync-photos.mjs",
+        "knip": "knip"
     },
     "dependencies": {
         "@emailjs/browser": "^4.4.1",
@@ -29,14 +30,17 @@
     },
     "devDependencies": {
         "@tailwindcss/postcss": "^4",
-        "@types/node": "^20",
+        "@types/node": "^20.19.43",
         "@types/react": "^19",
         "@types/react-dom": "^19",
         "cloudinary": "^2.10.0",
         "dotenv": "^17.4.2",
         "eslint": "^9",
         "eslint-config-next": "16.2.9",
+        "knip": "^6.24.0",
+        "prettier": "^3.9.4",
+        "prettier-plugin-tailwindcss": "^0.8.0",
         "tailwindcss": "^4",
-        "typescript": "^5"
+        "typescript": "^5.9.3"
     }
 }

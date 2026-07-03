@@ -1,6 +1,4 @@
-import { cloudinaryUrl } from "@/lib/photos";
 import Image from "next/image";
-import Link from "next/link";
 
 export const metadata = {
     title: "About",
@@ -8,40 +6,48 @@ export const metadata = {
 
 export default function AboutPage() {
     return (
-        <section className="flex flex-col gap-8">
-            <div className="relative aspect-video w-full overflow-hidden">
-                <Image
-                    src={cloudinaryUrl("samples/landscapes/nature-mountains", 1600)}
-                    alt="Javian Ng"
-                    fill
-                    sizes="100vw"
-                    className="object-cover"
-                    priority
-                />
+        <section className="mx-auto flex max-w-5xl flex-col gap-8">
+            <div className="flex flex-col gap-4 sm:flex-row">
+                <h1 className="w-3/5">About Javian Ng</h1>
+                <div className="w-full space-y-1 text-xs sm:w-2/5">
+                    <p>
+                        We live in a world moving fast - clickbait thumbnails,
+                        feeds refreshed every second, images conjured from a
+                        prompt instead of a moment. Attention is cheap, and
+                        beauty is manufactured on demand.
+                    </p>
+                    <p>
+                        But some things can't be prompted into existence. A
+                        certain slant of light. The second before someone
+                        laughs. A stillness that only happens once.
+                    </p>
+                    <p>
+                        I chase those moments and freeze them, not to perform,
+                        but to preserve. Every photograph here is real: a place
+                        I stood, a light I waited for, a story that happened
+                        once and will never happen the same way again.
+                    </p>
+                    <p>
+                        This isn't content. It's a collection of moments that
+                        were mine to witness, and now, yours to see.
+                    </p>
+                </div>
             </div>
-
-            {/* TODO: replace with your real bio */}
-            <div className="flex max-w-2xl flex-col gap-4 text-sm leading-relaxed text-muted-foreground">
-                <h1 className="text-lg font-medium text-foreground">About</h1>
-                <p>
-                    I&apos;m Javian, a photographer drawn to the quiet moments in between — the way
-                    light falls across a street at dusk, or a face caught mid-thought. Most of what
-                    I shoot starts as a walk with no destination in mind.
-                </p>
-                <p>
-                    My work moves between street photography, landscapes, and portraits, usually
-                    shot on location rather than in a studio. I&apos;m less interested in a
-                    perfectly composed frame than in one that feels true to the moment it captures.
-                </p>
-                <p>
-                    Based between a few cities and always looking for the next one worth
-                    photographing. If you&apos;d like to work together, I&apos;d love to hear from
-                    you —{" "}
-                    <Link href="/contact" className="text-foreground underline underline-offset-4">
-                        get in touch
-                    </Link>
-                    .
-                </p>
+            <div className="grid w-full grid-cols-2">
+                <Image
+                    src="/me_1.jpeg"
+                    alt="Javian Ng"
+                    height={800}
+                    width={800}
+                    className="aspect-video object-cover"
+                />
+                <Image
+                    src="/me_2.jpeg"
+                    alt="Javian Ng"
+                    height={800}
+                    width={800}
+                    className="aspect-video object-cover"
+                />
             </div>
         </section>
     );

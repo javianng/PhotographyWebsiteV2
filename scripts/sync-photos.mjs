@@ -10,8 +10,8 @@
 import { v2 as cloudinary } from "cloudinary";
 import { config as loadEnv } from "dotenv";
 import { readFileSync, writeFileSync } from "node:fs";
-import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const photosFile = path.join(__dirname, "..", "lib", "photos.ts");
@@ -66,7 +66,8 @@ function humanize(publicId) {
 function toPhoto(resource) {
     const tags = [...(resource.tags ?? [])].sort();
     const context = resource.context?.custom ?? {};
-    const label = context.caption ?? context.alt ?? humanize(resource.public_id);
+    const label =
+        context.caption ?? context.alt ?? humanize(resource.public_id);
 
     return {
         id: resource.public_id,
@@ -102,11 +103,14 @@ function writePhotosFile(photos) {
     const endIndex = source.indexOf(endMarker);
 
     if (startIndex === -1 || endIndex === -1) {
-        console.error(`Could not find ${startMarker} / ${endMarker} markers in ${photosFile}`);
+        console.error(
+            `Could not find ${startMarker} / ${endMarker} markers in ${photosFile}`,
+        );
         process.exit(1);
     }
 
-    const arrayBody = photos.length > 0 ? `\n${photos.map(formatPhoto).join("\n")}\n` : "";
+    const arrayBody =
+        photos.length > 0 ? `\n${photos.map(formatPhoto).join("\n")}\n` : "";
     const generatedBlock = `${startMarker}\nexport const photos: Photo[] = [${arrayBody}];\n${endMarker}`;
 
     const before = source.slice(0, startIndex);
@@ -125,14 +129,18 @@ async function main() {
 
     const untagged = photos.filter((p) => p.tags.length === 0);
     if (untagged.length > 0) {
-        console.log(`\n${untagged.length} photo(s) have no tags yet (they'll only show under "all"):`);
+        console.log(
+            `\n${untagged.length} photo(s) have no tags yet (they'll only show under "all"):`,
+        );
         for (const p of untagged) {
             console.log(`  - ${p.publicId}`);
         }
     }
 
     const allTags = Array.from(new Set(photos.flatMap((p) => p.tags))).sort();
-    console.log(`\n${allTags.length} distinct tag(s) found: ${allTags.join(", ") || "(none)"}`);
+    console.log(
+        `\n${allTags.length} distinct tag(s) found: ${allTags.join(", ") || "(none)"}`,
+    );
 }
 
 main().catch((error) => {

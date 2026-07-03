@@ -1,3 +1,6 @@
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+
 function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
     return (
         <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
@@ -6,20 +9,46 @@ function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
     );
 }
 
+function FlickrIcon(props: React.SVGProps<SVGSVGElement>) {
+    return (
+        <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+            <circle cx="7" cy="12" r="5" />
+            <circle cx="17" cy="12" r="5" />
+        </svg>
+    );
+}
+
 export function Footer() {
     return (
-        <footer className="border-t border-border">
-            <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-center gap-4 px-4 py-6 text-sm text-muted-foreground sm:px-6">
-                <a
-                    href="https://instagram.com/shotbyj.av"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Instagram"
-                    className="transition-colors hover:text-foreground"
-                >
-                    <InstagramIcon className="size-4" />
-                </a>
-                <span>&copy; {new Date().getFullYear()} Javian Ng</span>
+        <footer>
+            <div className="text-muted-foreground mx-auto flex max-w-5xl flex-col items-center justify-center gap-6 py-16 text-sm">
+                <div className="flex items-center gap-4">
+                    <Button variant="none" size="none" asChild>
+                        <Link
+                            href="https://www.instagram.com/javian.captures/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Instagram"
+                            className="hover:text-foreground transition-colors"
+                        >
+                            <InstagramIcon className="size-4" />
+                        </Link>
+                    </Button>
+                    <Button variant="none" size="none" asChild>
+                        <Link
+                            href="https://www.flickr.com/photos/shotbyjav"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Flickr"
+                            className="hover:text-foreground transition-colors"
+                        >
+                            <FlickrIcon className="size-4" />
+                        </Link>
+                    </Button>
+                </div>
+                <p>
+                    <small>&copy; {new Date().getFullYear()} Javian Ng</small>
+                </p>
             </div>
         </footer>
     );

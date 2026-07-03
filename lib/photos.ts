@@ -30,7 +30,7 @@ export const photos: Photo[] = [
         alt: "20260528 122145 A3yazz",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["people"],
         caption: "20260528 122145 A3yazz",
     },
     {
@@ -39,7 +39,7 @@ export const photos: Photo[] = [
         alt: "20260528 145542 Edit Odcyky",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["cars"],
         caption: "20260528 145542 Edit Odcyky",
     },
     {
@@ -48,7 +48,7 @@ export const photos: Photo[] = [
         alt: "20260528 181211 Wis0in",
         width: 6000,
         height: 4000,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260528 181211 Wis0in",
     },
     {
@@ -57,7 +57,7 @@ export const photos: Photo[] = [
         alt: "20260529 172641 Edit Hhagdx",
         width: 3611,
         height: 5417,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260529 172641 Edit Hhagdx",
     },
     {
@@ -66,7 +66,7 @@ export const photos: Photo[] = [
         alt: "20260529 172902 Kx12rp",
         width: 3972,
         height: 5958,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260529 172902 Kx12rp",
     },
     {
@@ -75,7 +75,7 @@ export const photos: Photo[] = [
         alt: "20260529 172944 2 Wfnsvj",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["people"],
         caption: "20260529 172944 2 Wfnsvj",
     },
     {
@@ -84,7 +84,7 @@ export const photos: Photo[] = [
         alt: "20260529 173050 2 Edit Smwxw2",
         width: 3916,
         height: 5874,
-        tags: ["location-china"],
+        tags: ["people"],
         caption: "20260529 173050 2 Edit Smwxw2",
     },
     {
@@ -93,7 +93,7 @@ export const photos: Photo[] = [
         alt: "20260529 173332 Kdssls",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260529 173332 Kdssls",
     },
     {
@@ -102,7 +102,7 @@ export const photos: Photo[] = [
         alt: "20260529 192138 Nhzmtc",
         width: 3803,
         height: 5704,
-        tags: ["location-china"],
+        tags: ["people"],
         caption: "20260529 192138 Nhzmtc",
     },
     {
@@ -111,7 +111,7 @@ export const photos: Photo[] = [
         alt: "20260529 192303 Rl1j0l",
         width: 3998,
         height: 5997,
-        tags: ["location-china"],
+        tags: ["people"],
         caption: "20260529 192303 Rl1j0l",
     },
     {
@@ -120,7 +120,7 @@ export const photos: Photo[] = [
         alt: "20260529 192903 2 Oacrew",
         width: 3471,
         height: 5207,
-        tags: ["location-china"],
+        tags: ["people"],
         caption: "20260529 192903 2 Oacrew",
     },
     {
@@ -129,7 +129,7 @@ export const photos: Photo[] = [
         alt: "20260529 194510 Ov4f2x",
         width: 3177,
         height: 4765,
-        tags: ["location-china"],
+        tags: ["people"],
         caption: "20260529 194510 Ov4f2x",
     },
     {
@@ -138,7 +138,7 @@ export const photos: Photo[] = [
         alt: "20260529 201618 2 Edit Xkywjr",
         width: 3807,
         height: 5711,
-        tags: ["location-china"],
+        tags: ["people"],
         caption: "20260529 201618 2 Edit Xkywjr",
     },
     {
@@ -147,7 +147,7 @@ export const photos: Photo[] = [
         alt: "20260530 010802 Vz54jz",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260530 010802 Vz54jz",
     },
     {
@@ -156,7 +156,7 @@ export const photos: Photo[] = [
         alt: "20260530 151335 Aoofz5",
         width: 6000,
         height: 4000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260530 151335 Aoofz5",
     },
     {
@@ -165,7 +165,7 @@ export const photos: Photo[] = [
         alt: "20260530 160237 Goulfy",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["people"],
         caption: "20260530 160237 Goulfy",
     },
     {
@@ -174,7 +174,7 @@ export const photos: Photo[] = [
         alt: "20260530 160814 Iputdc",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260530 160814 Iputdc",
     },
     {
@@ -183,7 +183,7 @@ export const photos: Photo[] = [
         alt: "20260530 161123 Aymufo",
         width: 3896,
         height: 5844,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260530 161123 Aymufo",
     },
     {
@@ -192,7 +192,7 @@ export const photos: Photo[] = [
         alt: "20260530 170820 2 Ve1lfq",
         width: 3919,
         height: 5879,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260530 170820 2 Ve1lfq",
     },
     {
@@ -201,7 +201,7 @@ export const photos: Photo[] = [
         alt: "20260530 171439 Lel0yk",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260530 171439 Lel0yk",
     },
     {
@@ -210,7 +210,7 @@ export const photos: Photo[] = [
         alt: "20260530 173048 H7jqar",
         width: 6000,
         height: 4000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260530 173048 H7jqar",
     },
     {
@@ -219,7 +219,7 @@ export const photos: Photo[] = [
         alt: "20260530 173207 2 Iruo0i",
         width: 3881,
         height: 5822,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260530 173207 2 Iruo0i",
     },
     {
@@ -228,7 +228,7 @@ export const photos: Photo[] = [
         alt: "20260530 182357 Tvjhpj",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260530 182357 Tvjhpj",
     },
     {
@@ -237,7 +237,7 @@ export const photos: Photo[] = [
         alt: "20260530 183720 3 J1pxxr",
         width: 3803,
         height: 5705,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260530 183720 3 J1pxxr",
     },
     {
@@ -246,7 +246,7 @@ export const photos: Photo[] = [
         alt: "20260530 195400 Tg7boj",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260530 195400 Tg7boj",
     },
     {
@@ -255,7 +255,7 @@ export const photos: Photo[] = [
         alt: "20260531 170435 2 Ozqmea",
         width: 3901,
         height: 5852,
-        tags: ["location-china"],
+        tags: ["people"],
         caption: "20260531 170435 2 Ozqmea",
     },
     {
@@ -264,7 +264,7 @@ export const photos: Photo[] = [
         alt: "20260531 170504 Keyw1y",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["people"],
         caption: "20260531 170504 Keyw1y",
     },
     {
@@ -273,7 +273,7 @@ export const photos: Photo[] = [
         alt: "20260531 170758 J18klg",
         width: 3941,
         height: 5912,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260531 170758 J18klg",
     },
     {
@@ -282,7 +282,7 @@ export const photos: Photo[] = [
         alt: "20260531 171245 Sfypab",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["people"],
         caption: "20260531 171245 Sfypab",
     },
     {
@@ -291,7 +291,7 @@ export const photos: Photo[] = [
         alt: "20260531 171556 M0myyx",
         width: 3929,
         height: 5894,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260531 171556 M0myyx",
     },
     {
@@ -300,7 +300,7 @@ export const photos: Photo[] = [
         alt: "20260531 172027 Dhpv6y",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260531 172027 Dhpv6y",
     },
     {
@@ -309,7 +309,7 @@ export const photos: Photo[] = [
         alt: "20260531 184134 Lk5ku9",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260531 184134 Lk5ku9",
     },
     {
@@ -318,7 +318,7 @@ export const photos: Photo[] = [
         alt: "20260531 184545 Ziflfy",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260531 184545 Ziflfy",
     },
     {
@@ -327,7 +327,7 @@ export const photos: Photo[] = [
         alt: "20260531 184711 Ej9uw9",
         width: 3557,
         height: 5336,
-        tags: ["location-china"],
+        tags: ["people"],
         caption: "20260531 184711 Ej9uw9",
     },
     {
@@ -336,7 +336,7 @@ export const photos: Photo[] = [
         alt: "20260531 190249 2 Lox7hj",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["people"],
         caption: "20260531 190249 2 Lox7hj",
     },
     {
@@ -345,7 +345,7 @@ export const photos: Photo[] = [
         alt: "20260601 132007 Gbnuzl",
         width: 3807,
         height: 5710,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260601 132007 Gbnuzl",
     },
     {
@@ -354,7 +354,7 @@ export const photos: Photo[] = [
         alt: "20260601 133102 Dxorvd",
         width: 3939,
         height: 5909,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260601 133102 Dxorvd",
     },
     {
@@ -363,7 +363,7 @@ export const photos: Photo[] = [
         alt: "20260601 151347 Wok8k1",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260601 151347 Wok8k1",
     },
     {
@@ -372,7 +372,7 @@ export const photos: Photo[] = [
         alt: "20260601 152513 X6tnpg",
         width: 3998,
         height: 5997,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260601 152513 X6tnpg",
     },
     {
@@ -381,7 +381,7 @@ export const photos: Photo[] = [
         alt: "20260601 154540 Hypfe5",
         width: 2961,
         height: 4442,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260601 154540 Hypfe5",
     },
     {
@@ -390,7 +390,7 @@ export const photos: Photo[] = [
         alt: "20260601 163053 Rm63ta",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260601 163053 Rm63ta",
     },
     {
@@ -399,7 +399,7 @@ export const photos: Photo[] = [
         alt: "20260601 163631 Wehpea",
         width: 3457,
         height: 5185,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260601 163631 Wehpea",
     },
     {
@@ -408,7 +408,7 @@ export const photos: Photo[] = [
         alt: "20260601 163855 S9fh3p",
         width: 3160,
         height: 4740,
-        tags: ["location-china"],
+        tags: ["people"],
         caption: "20260601 163855 S9fh3p",
     },
     {
@@ -417,7 +417,7 @@ export const photos: Photo[] = [
         alt: "20260601 165253 Ozzqah",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260601 165253 Ozzqah",
     },
     {
@@ -426,7 +426,7 @@ export const photos: Photo[] = [
         alt: "20260601 180030 Zweiae",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260601 180030 Zweiae",
     },
     {
@@ -435,7 +435,7 @@ export const photos: Photo[] = [
         alt: "20260601 180656 Edit Uluhqk",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["landscape","people"],
         caption: "20260601 180656 Edit Uluhqk",
     },
     {
@@ -444,7 +444,7 @@ export const photos: Photo[] = [
         alt: "20260601 181010 Pjhaoa",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260601 181010 Pjhaoa",
     },
     {
@@ -453,7 +453,7 @@ export const photos: Photo[] = [
         alt: "20260601 181705 2 Uvutkm",
         width: 3442,
         height: 5163,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260601 181705 2 Uvutkm",
     },
     {
@@ -462,7 +462,7 @@ export const photos: Photo[] = [
         alt: "20260601 182308 P6mib4",
         width: 3917,
         height: 5876,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260601 182308 P6mib4",
     },
     {
@@ -471,7 +471,7 @@ export const photos: Photo[] = [
         alt: "20260601 182605 Edit Dtgeol",
         width: 3962,
         height: 5943,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260601 182605 Edit Dtgeol",
     },
     {
@@ -480,7 +480,7 @@ export const photos: Photo[] = [
         alt: "20260601 183217 Qipqyy",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260601 183217 Qipqyy",
     },
     {
@@ -489,7 +489,7 @@ export const photos: Photo[] = [
         alt: "20260601 183437 Gsci6u",
         width: 3450,
         height: 5175,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260601 183437 Gsci6u",
     },
     {
@@ -498,7 +498,7 @@ export const photos: Photo[] = [
         alt: "20260603 154207 Rrfzov",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260603 154207 Rrfzov",
     },
     {
@@ -507,7 +507,7 @@ export const photos: Photo[] = [
         alt: "20260603 154549 Xqxyoh",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260603 154549 Xqxyoh",
     },
     {
@@ -516,7 +516,7 @@ export const photos: Photo[] = [
         alt: "20260603 163413 H0aove",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260603 163413 H0aove",
     },
     {
@@ -525,7 +525,7 @@ export const photos: Photo[] = [
         alt: "20260603 173046 Djup9u",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260603 173046 Djup9u",
     },
     {
@@ -534,7 +534,7 @@ export const photos: Photo[] = [
         alt: "20260603 175831 K0e9mx",
         width: 6000,
         height: 4000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260603 175831 K0e9mx",
     },
     {
@@ -543,7 +543,7 @@ export const photos: Photo[] = [
         alt: "20260603 180857 Cbm09y",
         width: 3837,
         height: 5755,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260603 180857 Cbm09y",
     },
     {
@@ -552,7 +552,7 @@ export const photos: Photo[] = [
         alt: "20260603 184143 Znushm",
         width: 6000,
         height: 4000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260603 184143 Znushm",
     },
     {
@@ -561,7 +561,7 @@ export const photos: Photo[] = [
         alt: "20260603 185827 F2ylm0",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260603 185827 F2ylm0",
     },
     {
@@ -570,7 +570,7 @@ export const photos: Photo[] = [
         alt: "20260603 195355 Dghaaz",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260603 195355 Dghaaz",
     },
     {
@@ -579,7 +579,7 @@ export const photos: Photo[] = [
         alt: "20260604 103851 Aa2nfr",
         width: 6000,
         height: 4000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260604 103851 Aa2nfr",
     },
     {
@@ -588,7 +588,7 @@ export const photos: Photo[] = [
         alt: "20260604 105458 Iarblv",
         width: 6000,
         height: 4000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260604 105458 Iarblv",
     },
     {
@@ -597,7 +597,7 @@ export const photos: Photo[] = [
         alt: "20260604 115231 Y8et0a",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260604 115231 Y8et0a",
     },
     {
@@ -606,7 +606,7 @@ export const photos: Photo[] = [
         alt: "20260604 115240 Ldewd6",
         width: 6000,
         height: 4000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260604 115240 Ldewd6",
     },
     {
@@ -615,7 +615,7 @@ export const photos: Photo[] = [
         alt: "20260604 152802 Crx89g",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260604 152802 Crx89g",
     },
     {
@@ -624,7 +624,7 @@ export const photos: Photo[] = [
         alt: "20260604 161529 Srnkud",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260604 161529 Srnkud",
     },
     {
@@ -633,7 +633,7 @@ export const photos: Photo[] = [
         alt: "20260605 085244 Mnef7b",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260605 085244 Mnef7b",
     },
     {
@@ -642,7 +642,7 @@ export const photos: Photo[] = [
         alt: "20260605 090319 Hm7jts",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260605 090319 Hm7jts",
     },
     {
@@ -651,7 +651,7 @@ export const photos: Photo[] = [
         alt: "20260605 091218 Uusxsw",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260605 091218 Uusxsw",
     },
     {
@@ -660,7 +660,7 @@ export const photos: Photo[] = [
         alt: "20260605 091636 Hxmpxr",
         width: 6000,
         height: 4000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260605 091636 Hxmpxr",
     },
     {
@@ -669,7 +669,7 @@ export const photos: Photo[] = [
         alt: "20260605 101649 Jmbchl",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260605 101649 Jmbchl",
     },
     {
@@ -678,7 +678,7 @@ export const photos: Photo[] = [
         alt: "20260605 101941 Wljtkj",
         width: 5900,
         height: 3933,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260605 101941 Wljtkj",
     },
     {
@@ -687,7 +687,7 @@ export const photos: Photo[] = [
         alt: "20260605 104819 Rf2ihs",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260605 104819 Rf2ihs",
     },
     {
@@ -696,7 +696,7 @@ export const photos: Photo[] = [
         alt: "20260605 120908 Kvpeym",
         width: 6000,
         height: 4000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260605 120908 Kvpeym",
     },
     {
@@ -705,7 +705,7 @@ export const photos: Photo[] = [
         alt: "20260605 120927 I8a0w9",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260605 120927 I8a0w9",
     },
     {
@@ -714,7 +714,7 @@ export const photos: Photo[] = [
         alt: "20260605 123003 Zniorr",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260605 123003 Zniorr",
     },
     {
@@ -723,7 +723,7 @@ export const photos: Photo[] = [
         alt: "20260605 123430 Xf8utb",
         width: 5911,
         height: 3941,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260605 123430 Xf8utb",
     },
     {
@@ -732,7 +732,7 @@ export const photos: Photo[] = [
         alt: "20260605 123820 Coztdr",
         width: 3941,
         height: 5911,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260605 123820 Coztdr",
     },
     {
@@ -741,7 +741,7 @@ export const photos: Photo[] = [
         alt: "20260605 192648 Rppceo",
         width: 3991,
         height: 5986,
-        tags: ["location-china"],
+        tags: ["people"],
         caption: "20260605 192648 Rppceo",
     },
     {
@@ -750,7 +750,7 @@ export const photos: Photo[] = [
         alt: "20260605 195820 P1opo5",
         width: 6000,
         height: 4000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260605 195820 P1opo5",
     },
     {
@@ -759,7 +759,7 @@ export const photos: Photo[] = [
         alt: "20260606 175203 Sin1jv",
         width: 2869,
         height: 4304,
-        tags: ["location-china"],
+        tags: ["people"],
         caption: "20260606 175203 Sin1jv",
     },
     {
@@ -768,7 +768,7 @@ export const photos: Photo[] = [
         alt: "20260606 180615 Krt004",
         width: 3924,
         height: 5886,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260606 180615 Krt004",
     },
     {
@@ -777,7 +777,7 @@ export const photos: Photo[] = [
         alt: "20260606 181835 Wqzjws",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260606 181835 Wqzjws",
     },
     {
@@ -786,7 +786,7 @@ export const photos: Photo[] = [
         alt: "20260606 194841 Avjiaw",
         width: 6000,
         height: 4000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260606 194841 Avjiaw",
     },
     {
@@ -795,7 +795,7 @@ export const photos: Photo[] = [
         alt: "20260606 200643 D6pflm",
         width: 6000,
         height: 4000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260606 200643 D6pflm",
     },
     {
@@ -804,7 +804,7 @@ export const photos: Photo[] = [
         alt: "20260606 210553 Tehfan",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260606 210553 Tehfan",
     },
     {
@@ -813,7 +813,7 @@ export const photos: Photo[] = [
         alt: "20260607 100155 U7xfyf",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260607 100155 U7xfyf",
     },
     {
@@ -822,7 +822,7 @@ export const photos: Photo[] = [
         alt: "20260607 102927 Wgvwvd",
         width: 3964,
         height: 5946,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260607 102927 Wgvwvd",
     },
     {
@@ -831,7 +831,7 @@ export const photos: Photo[] = [
         alt: "20260607 103121 Jgwsyf",
         width: 6000,
         height: 4000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260607 103121 Jgwsyf",
     },
     {
@@ -840,7 +840,7 @@ export const photos: Photo[] = [
         alt: "20260607 110721 Tki4x2",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260607 110721 Tki4x2",
     },
     {
@@ -849,7 +849,7 @@ export const photos: Photo[] = [
         alt: "20260607 135224 Ccydam",
         width: 5998,
         height: 3999,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260607 135224 Ccydam",
     },
     {
@@ -858,7 +858,7 @@ export const photos: Photo[] = [
         alt: "20260607 135321 Hfspz4",
         width: 3901,
         height: 5851,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260607 135321 Hfspz4",
     },
     {
@@ -867,7 +867,7 @@ export const photos: Photo[] = [
         alt: "20260607 153913 Lbunvd",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["people"],
         caption: "20260607 153913 Lbunvd",
     },
     {
@@ -876,7 +876,7 @@ export const photos: Photo[] = [
         alt: "20260607 160129 Pvwtbv",
         width: 3931,
         height: 5897,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260607 160129 Pvwtbv",
     },
     {
@@ -885,7 +885,7 @@ export const photos: Photo[] = [
         alt: "20260607 160632 Vbwhi3",
         width: 3838,
         height: 5757,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260607 160632 Vbwhi3",
     },
     {
@@ -894,7 +894,7 @@ export const photos: Photo[] = [
         alt: "20260607 162126 Jn0pms",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260607 162126 Jn0pms",
     },
     {
@@ -903,7 +903,7 @@ export const photos: Photo[] = [
         alt: "20260607 200637 Mscdut",
         width: 6000,
         height: 4000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260607 200637 Mscdut",
     },
     {
@@ -912,7 +912,7 @@ export const photos: Photo[] = [
         alt: "20260608 065009 Muk0qp",
         width: 6000,
         height: 4000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260608 065009 Muk0qp",
     },
     {
@@ -921,7 +921,7 @@ export const photos: Photo[] = [
         alt: "20260608 075924 Qnlz4k",
         width: 6000,
         height: 4000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260608 075924 Qnlz4k",
     },
     {
@@ -930,7 +930,7 @@ export const photos: Photo[] = [
         alt: "20260608 080820 Xrh9gy",
         width: 6000,
         height: 4000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260608 080820 Xrh9gy",
     },
     {
@@ -939,7 +939,7 @@ export const photos: Photo[] = [
         alt: "20260608 093617 Gnoeg8",
         width: 6000,
         height: 4000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260608 093617 Gnoeg8",
     },
     {
@@ -948,7 +948,7 @@ export const photos: Photo[] = [
         alt: "20260608 125256 Fezoq7",
         width: 6000,
         height: 4000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260608 125256 Fezoq7",
     },
     {
@@ -957,7 +957,7 @@ export const photos: Photo[] = [
         alt: "20260608 130046 Edit Lrvxix",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260608 130046 Edit Lrvxix",
     },
     {
@@ -966,7 +966,7 @@ export const photos: Photo[] = [
         alt: "20260608 133234 Qdyvmt",
         width: 6000,
         height: 4000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260608 133234 Qdyvmt",
     },
     {
@@ -975,7 +975,7 @@ export const photos: Photo[] = [
         alt: "20260608 133245 J5eoxr",
         width: 6000,
         height: 4000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260608 133245 J5eoxr",
     },
     {
@@ -984,7 +984,7 @@ export const photos: Photo[] = [
         alt: "20260608 134450 Rigxlv",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260608 134450 Rigxlv",
     },
     {
@@ -993,7 +993,7 @@ export const photos: Photo[] = [
         alt: "20260609 165703 V7kspf",
         width: 5950,
         height: 3967,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260609 165703 V7kspf",
     },
     {
@@ -1002,7 +1002,7 @@ export const photos: Photo[] = [
         alt: "20260609 170832 Ne7364",
         width: 6000,
         height: 4000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260609 170832 Ne7364",
     },
     {
@@ -1011,7 +1011,7 @@ export const photos: Photo[] = [
         alt: "20260609 171100 Vzsepa",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260609 171100 Vzsepa",
     },
     {
@@ -1020,7 +1020,7 @@ export const photos: Photo[] = [
         alt: "20260609 172655 Edit Olshlx",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["people"],
         caption: "20260609 172655 Edit Olshlx",
     },
     {
@@ -1029,7 +1029,7 @@ export const photos: Photo[] = [
         alt: "20260609 172742 Ae2smx",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["people"],
         caption: "20260609 172742 Ae2smx",
     },
     {
@@ -1038,7 +1038,7 @@ export const photos: Photo[] = [
         alt: "20260609 173226 Kkyhv2",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260609 173226 Kkyhv2",
     },
     {
@@ -1047,7 +1047,7 @@ export const photos: Photo[] = [
         alt: "20260609 175820 Mc23lt",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260609 175820 Mc23lt",
     },
     {
@@ -1056,7 +1056,7 @@ export const photos: Photo[] = [
         alt: "20260609 175831 Zwcuue",
         width: 6000,
         height: 4000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260609 175831 Zwcuue",
     },
     {
@@ -1065,7 +1065,7 @@ export const photos: Photo[] = [
         alt: "20260609 181949 Irrjc5",
         width: 3985,
         height: 5977,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260609 181949 Irrjc5",
     },
     {
@@ -1074,7 +1074,7 @@ export const photos: Photo[] = [
         alt: "20260609 182332 Cvcrcl",
         width: 3667,
         height: 5501,
-        tags: ["location-china"],
+        tags: ["people"],
         caption: "20260609 182332 Cvcrcl",
     },
     {
@@ -1083,7 +1083,7 @@ export const photos: Photo[] = [
         alt: "20260610 085004 Dwsfbu",
         width: 5889,
         height: 3926,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260610 085004 Dwsfbu",
     },
     {
@@ -1092,7 +1092,7 @@ export const photos: Photo[] = [
         alt: "20260610 091209 2 Rz1pyr",
         width: 6000,
         height: 4000,
-        tags: ["location-china"],
+        tags: ["landscape"],
         caption: "20260610 091209 2 Rz1pyr",
     },
     {
@@ -1101,7 +1101,7 @@ export const photos: Photo[] = [
         alt: "20260610 100224 R68l2l",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260610 100224 R68l2l",
     },
     {
@@ -1110,7 +1110,7 @@ export const photos: Photo[] = [
         alt: "20260610 103902 Chty6v",
         width: 5123,
         height: 3415,
-        tags: ["location-china"],
+        tags: ["people"],
         caption: "20260610 103902 Chty6v",
     },
     {
@@ -1119,7 +1119,7 @@ export const photos: Photo[] = [
         alt: "20260610 104151 Eagckx",
         width: 3785,
         height: 5677,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260610 104151 Eagckx",
     },
     {
@@ -1128,7 +1128,7 @@ export const photos: Photo[] = [
         alt: "20260610 104725 H3nj88",
         width: 6000,
         height: 4000,
-        tags: ["location-china"],
+        tags: [],
         caption: "20260610 104725 H3nj88",
     },
     {
@@ -1137,7 +1137,7 @@ export const photos: Photo[] = [
         alt: "20260610 114412 Wwxvmu",
         width: 3998,
         height: 5997,
-        tags: ["location-china"],
+        tags: ["people"],
         caption: "20260610 114412 Wwxvmu",
     },
     {
@@ -1146,7 +1146,7 @@ export const photos: Photo[] = [
         alt: "20260610 122045 2 Gev3op",
         width: 4000,
         height: 6000,
-        tags: ["location-china"],
+        tags: ["people"],
         caption: "20260610 122045 2 Gev3op",
     },
     {
@@ -1155,7 +1155,7 @@ export const photos: Photo[] = [
         alt: "20260615 171312 Sz6tju",
         width: 4000,
         height: 6000,
-        tags: ["location-thailand"],
+        tags: ["cars"],
         caption: "20260615 171312 Sz6tju",
     },
     {
@@ -1164,7 +1164,7 @@ export const photos: Photo[] = [
         alt: "20260615 171744 Uaeoar",
         width: 4000,
         height: 6000,
-        tags: ["location-thailand"],
+        tags: ["cars"],
         caption: "20260615 171744 Uaeoar",
     },
     {
@@ -1173,7 +1173,7 @@ export const photos: Photo[] = [
         alt: "20260615 171903 F12sv4",
         width: 3982,
         height: 5973,
-        tags: ["location-thailand"],
+        tags: ["cars"],
         caption: "20260615 171903 F12sv4",
     },
     {
@@ -1182,7 +1182,7 @@ export const photos: Photo[] = [
         alt: "20260615 172521 Pohqwi",
         width: 4000,
         height: 6000,
-        tags: ["location-thailand"],
+        tags: ["cars"],
         caption: "20260615 172521 Pohqwi",
     },
     {
@@ -1191,7 +1191,7 @@ export const photos: Photo[] = [
         alt: "20260615 172954 Trwyle",
         width: 3969,
         height: 5953,
-        tags: ["location-thailand"],
+        tags: ["cars"],
         caption: "20260615 172954 Trwyle",
     },
     {
@@ -1200,7 +1200,7 @@ export const photos: Photo[] = [
         alt: "20260615 173341 D6p2dd",
         width: 3996,
         height: 5994,
-        tags: ["location-thailand"],
+        tags: ["cars"],
         caption: "20260615 173341 D6p2dd",
     },
     {
@@ -1209,7 +1209,7 @@ export const photos: Photo[] = [
         alt: "20260615 173555 Mnzpww",
         width: 4000,
         height: 6000,
-        tags: ["location-thailand"],
+        tags: ["cars"],
         caption: "20260615 173555 Mnzpww",
     },
     {
@@ -1218,7 +1218,7 @@ export const photos: Photo[] = [
         alt: "20260615 173644 Ldhqzt",
         width: 3998,
         height: 5997,
-        tags: ["location-thailand"],
+        tags: ["cars"],
         caption: "20260615 173644 Ldhqzt",
     },
     {
@@ -1227,7 +1227,7 @@ export const photos: Photo[] = [
         alt: "20260615 173808 Nke7wd",
         width: 4000,
         height: 6000,
-        tags: ["location-thailand"],
+        tags: ["cars"],
         caption: "20260615 173808 Nke7wd",
     },
     {
@@ -1236,7 +1236,7 @@ export const photos: Photo[] = [
         alt: "20260615 191644 Ryobou",
         width: 4000,
         height: 6000,
-        tags: ["location-thailand"],
+        tags: [],
         caption: "20260615 191644 Ryobou",
     },
 ];
@@ -1245,4 +1245,6 @@ export const photos: Photo[] = [
 // All distinct tags across every photo, in alphabetical order — the filter
 // bar renders one button per entry here, so tagging a photo with a brand new
 // tag in Cloudinary automatically adds a new filter option after the next sync.
-export const ALL_TAGS: string[] = Array.from(new Set(photos.flatMap((photo) => photo.tags))).sort();
+export const ALL_TAGS: string[] = Array.from(
+    new Set(photos.flatMap((photo) => photo.tags)),
+).sort();

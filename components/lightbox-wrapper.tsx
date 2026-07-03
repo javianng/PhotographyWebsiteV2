@@ -3,8 +3,6 @@
 import { cloudinaryUrl, type Photo } from "@/lib/photos";
 import { useEffect } from "react";
 import Lightbox from "yet-another-react-lightbox";
-import Captions from "yet-another-react-lightbox/plugins/captions";
-import "yet-another-react-lightbox/plugins/captions.css";
 import "yet-another-react-lightbox/styles.css";
 
 type LightboxWrapperProps = {
@@ -13,28 +11,34 @@ type LightboxWrapperProps = {
     onClose: () => void;
 };
 
-export function LightboxWrapper({ photos, index, onClose }: LightboxWrapperProps) {
+export function LightboxWrapper({
+    photos,
+    index,
+    onClose,
+}: LightboxWrapperProps) {
     const open = index !== null;
 
     useEffect(() => {
         if (!open) return;
 
         const handleContextMenu = (e: MouseEvent) => {
-            if (e.target instanceof Element && e.target.closest(".yarl__slide")) {
+            if (
+                e.target instanceof Element &&
+                e.target.closest(".yarl__slide")
+            ) {
                 e.preventDefault();
             }
         };
 
         document.addEventListener("contextmenu", handleContextMenu);
-        return () => document.removeEventListener("contextmenu", handleContextMenu);
+        return () =>
+            document.removeEventListener("contextmenu", handleContextMenu);
     }, [open]);
 
     const slides = photos.map((photo) => ({
         src: cloudinaryUrl(photo.publicId, 2400),
         width: photo.width,
         height: photo.height,
-        title: photo.caption,
-        description: photo.tags.join(" • "),
     }));
 
     return (
@@ -43,7 +47,6 @@ export function LightboxWrapper({ photos, index, onClose }: LightboxWrapperProps
             close={onClose}
             index={index ?? 0}
             slides={slides}
-            plugins={[Captions]}
         />
     );
 }
